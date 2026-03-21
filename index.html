@@ -2,139 +2,77 @@
 <html lang="uk">
 <head>
 <meta charset="UTF-8">
-<title>Флаєр A4</title>
+<title>Флаєр 🌊</title>
 
 <style>
 body {
   margin: 0;
   font-family: Arial;
+  background: linear-gradient(135deg, #4da6ff, #ffd966);
+  padding: 20px;
 }
 
-.page {
-  width: 210mm;
-  height: 297mm;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }
 
-/* фон емодзі */
-.card {
-  position: relative;
-  border: 1px dashed #aaa;
-  padding: 10px;
-  box-sizing: border-box;
-  background: linear-gradient(135deg, #e3f2fd, #fff3e0);
-  overflow: hidden;
-}
-
-.card::before {
-  content: "🌊✨💛🌴🌈☀️❤️🌊✨";
-  position: absolute;
-  font-size: 40px;
-  opacity: 0.08;
-  top: 10px;
-  left: 10px;
-  right: 10px;
-  word-wrap: break-word;
-}
-
-/* сердечка */
-.card::after {
-  content: "💛❤️💛❤️💛❤️";
-  position: absolute;
-  bottom: 5px;
-  right: 5px;
-  font-size: 18px;
-  opacity: 0.2;
-}
-
-.content {
-  position: relative;
-  z-index: 2;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-h3 {
-  margin: 0;
+h1 {
   text-align: center;
-  color: #0077cc;
 }
 
 .qr {
   text-align: center;
+  margin-top: 20px;
 }
 
 .qr img {
-  width: 70px;
+  width: 180px;
 }
 
-.footer {
-  font-size: 10px;
-  text-align: center;
-  opacity: 0.7;
+.text {
+  margin-top: 15px;
+  line-height: 1.5;
 }
 </style>
 </head>
 
 <body>
 
-<div class="page">
+<div class="container">
 
-  <!-- повтор 6 раз -->
-  <div class="card">
-    <div class="content">
-      <h3>🌊 Банка на мрію</h3>
+<h1>🌊 Банка на мрію</h1>
 
-      <p style="font-size:10px; text-align:center;">
-        Невелика ініціатива для гарних емоцій ✨
-      </p>
+<div class="text">
+<p>
+Я створила цю сторінку як невелику ініціативу, що для мене та мого сина Ігоря є способом отримати гарні емоції, нові враження та теплу подорож 🌊✨
+</p>
 
-      <div class="qr">
-        <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://babikovan.github.io/BabikovaNBabikova/">
-      </div>
+<p>
+Мій син Ігор — активний та допитливий хлопчик, який любить пригоди і мріє про море 🌟
+</p>
 
-      <p style="font-size:10px; text-align:center;">
-        💳 4874 1000 2628 3641
-      </p>
+<p>
+Я працюю барістою ☕ і намагаюся щодня робити все можливе, щоб мій син ріс у любові, турботі та радості. Я добра, мила та світла людина, яка щиро цінує підтримку та людяність 💛
+</p>
 
-      <div class="footer">Анастасія Коцюбенко</div>
-    </div>
-  </div>
+<p>
+Ця “банка на мрію” створена як теплий спосіб подарувати Ігорю емоції, підтримку і трохи радості 💫
+</p>
 
-  <!-- копії -->
-  <div class="card"><div class="content">
-    <h3>🌊 Банка на мрію</h3>
-    <div class="qr"><img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://babikovan.github.io/BabikovaNBabikova/"></div>
-    <div class="footer">Анастасія Коцюбенко</div>
-  </div></div>
+<p>
+Дякую моїї сестричці за створення цієї сторінки Анастасії Коцюбенко 🤍
+</p>
+</div>
 
-  <div class="card"><div class="content">
-    <h3>🌊 Банка на мрію</h3>
-    <div class="qr"><img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://babikovan.github.io/BabikovaNBabikova/"></div>
-    <div class="footer">Анастасія Коцюбенко</div>
-  </div></div>
-
-  <div class="card"><div class="content">
-    <h3>🌊 Банка на мрію</h3>
-    <div class="qr"><img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://babikovan.github.io/BabikovaNBabikova/"></div>
-    <div class="footer">Анастасія Коцюбенко</div>
-  </div></div>
-
-  <div class="card"><div class="content">
-    <h3>🌊 Банка на мрію</h3>
-    <div class="qr"><img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://babikovan.github.io/BabikovaNBabikova/"></div>
-    <div class="footer">Анастасія Коцюбенко</div>
-  </div></div>
-
-  <div class="card"><div class="content">
-    <h3>🌊 Банка на мрію</h3>
-    <div class="qr"><img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://babikovan.github.io/BabikovaNBabikova/"></div>
-    <div class="footer">Анастасія Коцюбенко</div>
-  </div></div>
+<div class="qr">
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://babikovan.github.io/BabikovaNBabikova/">
+<p>Скануй QR щоб перейти на сайт 📲</p>
+</div>
 
 </div>
 
