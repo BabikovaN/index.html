@@ -1,102 +1,124 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <title>Допоможемо Ігорю побачити море 🌊</title>
+<meta charset="UTF-8">
+<title>Флаєр</title>
 
-  <style>
-    body {
-      font-family: Arial;
-      background-color: #f0f8ff;
-      padding: 20px;
-    }
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    h1 {
-      color: #0077cc;
-    }
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #eee;
+}
 
-    .box {
-      background: white;
-      padding: 15px;
-      border-radius: 10px;
-      margin-top: 15px;
-    }
+/* сторінка A4 */
+.page {
+  width: 210mm;
+  height: 297mm;
+  padding: 20mm;
+  background: white;
+  box-sizing: border-box;
+}
 
-    .card {
-      font-size: 26px;
-      font-weight: bold;
-      padding: 12px;
-      width: 100%;
-      max-width: 350px;
-      text-align: center;
-      border-radius: 8px;
-      border: 1px solid #aaa;
-    }
-  </style>
+/* центр */
+.center {
+  text-align: center;
+}
+
+/* QR */
+.qr img {
+  width: 220px;
+  margin-top: 10px;
+}
+
+/* блок */
+.box {
+  border-radius: 12px;
+  padding: 15px;
+  margin-top: 15px;
+  background: linear-gradient(135deg, #e3f2fd, #fff3e0);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* заголовок */
+h1 {
+  color: #0077cc;
+  margin-bottom: 5px;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+/* кнопка-стиль (візуально) */
+.highlight {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0077cc;
+}
+
+/* дрібний текст */
+.small {
+  font-size: 14px;
+  color: #333;
+}
+</style>
 </head>
 
 <body>
 
-  <h1>Допоможемо Ігорю побачити море 🌊</h1>
-  <h2>Мрія маленького хлопчика</h2>
+<div class="page">
+
+  <div class="center">
+    <h1>🌊 Допоможемо Ігорю побачити море</h1>
+    <h2>Маленька мрія + трошки магії ✨</h2>
+  </div>
 
   <div class="box">
-    <p>
-      Ігорю 8 років. Він ніколи не був на морі, але дуже мріє побачити Одесу,
-      хвилі, дельфінів та просто провести щасливі дні з мамою ❤️
+    <p class="small">
+      Привіт 👋<br><br>
+      Це Ігор — йому 8 років і він мріє вперше побачити море 🌊<br><br>
+
+      Його мама Саша працює в кав’ярні ☕ і щодня дарує людям гарний настрій.<br><br>
+
+      Ми хочемо допомогти їм здійснити цю маленьку подорож в Одесу ❤️
     </p>
+  </div>
 
-    <p>
-      Його мама Саша дуже старається для нього, але зараз їм потрібна підтримка 🙏
+  <div class="box">
+    <p class="highlight">🎯 Мета: 10 000 грн</p>
+    <p>Кожна гривня наближає Ігоря до мрії 💙</p>
+  </div>
+
+  <div class="box center qr">
+    <p class="highlight">📲 Скануй QR-код</p>
+
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=https://babikovan.github.io/BabikovaNBabikova/">
+
+    <p class="small">
+      Відкрий сайт та підтримай ☕💛
     </p>
   </div>
 
   <div class="box">
-    <h3>🎯 Ціль збору</h3>
-    <h2>10 000 грн</h2>
+    <p class="highlight">💳 Донат:</p>
+    <p>MonoBank Jar: https://send.monobank.ua/jar/4EPH9gFovU</p>
+
+    <p><b>Карта:</b><br>
+    4874 1000 2628 3641</p>
   </div>
 
-  <div class="box">
-    <h3>🌴 Мрії Ігоря</h3>
-    <ul>
-      <li>Побачити море 🌊</li>
-      <li>Побачити дельфінів 🐬</li>
-      <li>Покататися на екскурсійному автобусі 🚌</li>
-      <li>Побувати в музеї воскових фігур 🏛️</li>
-      <li>Поїсти смачного морозива 🍦</li>
-    </ul>
+  <div class="box center">
+    <p class="small">
+      Дякуємо за кожну підтримку 💛<br>
+      Ви реально допомагаєте здійснити мрію 🌊
+    </p>
   </div>
 
-  <div class="box">
-    <h3>🌸 Мрії мами Саші</h3>
-    <ul>
-      <li>Аквапарк 💦</li>
-      <li>Дельфінарій 🐬</li>
-      <li>Прогулянка від Аркадії до Немо 🌿</li>
-      <li>Погуляти та відпочити з сином ❤️</li>
-      <li>Посидіти в гарному кафе ☕</li>
-    </ul>
-  </div>
-
-  <div class="box">
-    <h3>💳 Допомогти</h3>
-
-    <input 
-      type="text" 
-      value="4441 1110 1931 1673"
-      readonly
-      class="card"
-      onclick="this.select(); document.execCommand('copy'); alert('Скопійовано! 📋');"
-    >
-
-    <p>Натисни на номер, щоб скопіювати 🙏</p>
-  </div>
-
-  <div class="box">
-    <h3>📸 Фото</h3>
-    <img src="photo.jpg" width="200">
-    <img src="photo1.jpg" width="200">
-  </div>
+</div>
 
 </body>
 </html>
