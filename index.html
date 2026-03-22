@@ -5,73 +5,148 @@
 <title>Флаєр 🌊</title>
 
 <style>
-body {
-  margin: 0;
-  font-family: Arial;
-  background: linear-gradient(135deg, #4da6ff, #ffd966);
-  padding: 20px;
+
+/* ДЛЯ ДРУКУ */
+@media print {
+  body {
+    margin: 0;
+  }
 }
 
+/* СІТКА 2x2 (4 флаєри) */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 10px;
+}
+
+/* КАРТКА */
 .container {
-  max-width: 600px;
-  margin: auto;
-  background: white;
-  padding: 20px;
+  background: linear-gradient(135deg, #ffcce6, #ffe6f2);
   border-radius: 16px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  padding: 15px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ДЕКОР */
+.container::before {
+  content: "💖 🐚 💖 🪸 💖 🐚";
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  font-size: 18px;
+  opacity: 0.3;
+}
+
+.container::after {
+  content: "🐚 💖 🪸 💖 🐚 💖";
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  font-size: 18px;
+  opacity: 0.3;
 }
 
 h1 {
   text-align: center;
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.text {
+  font-size: 11px;
+  line-height: 1.4;
 }
 
 .qr {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .qr img {
-  width: 180px;
+  width: 100px;
 }
 
-.text {
-  margin-top: 15px;
-  line-height: 1.5;
+.qr p {
+  font-size: 10px;
+  margin: 5px 0;
 }
+
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<div class="grid">
 
+<!-- ФЛАЄР 1 -->
+<div class="container">
 <h1>🌊 Банка на мрію</h1>
 
 <div class="text">
-<p>
-Я створила цю сторінку як невелику ініціативу, що для мене та мого сина Ігоря є способом отримати гарні емоції, нові враження та теплу подорож 🌊✨
-</p>
-
-<p>
-Мій син Ігор — активний та допитливий хлопчик, який любить пригоди і мріє про море 🌟
-</p>
-
-<p>
-Я працюю барістою ☕ і намагаюся щодня робити все можливе, щоб мій син ріс у любові, турботі та радості. Я добра, мила та світла людина, яка щиро цінує підтримку та людяність 💛
-</p>
-
-<p>
-Ця “банка на мрію” створена як теплий спосіб подарувати Ігорю емоції, підтримку і трохи радості 💫
-</p>
-
-<p>
-Дякую моїї сестричці за створення цієї сторінки Анастасії Коцюбенко 🤍
-</p>
+<p>Я створила цю сторінку як невелику ініціативу для мого сина Ігоря 🌊✨</p>
+<p>Він мріє про море та нові пригоди 🌟</p>
+<p>Я працюю барістою ☕ і хочу подарувати йому щасливі емоції 💛</p>
+<p>Дякую за підтримку 💫</p>
 </div>
 
 <div class="qr">
 <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://babikovan.github.io/BabikovaNBabikova/">
-<p>Скануй QR щоб перейти на сайт 📲</p>
+<p>Скануй 📲</p>
+</div>
+</div>
+
+<!-- ФЛАЄР 2 -->
+<div class="container">
+<h1>🌊 Банка на мрію</h1>
+
+<div class="text">
+<p>Це маленька мрія мого сина Ігоря 💖</p>
+<p>Він дуже хоче побачити море 🌊</p>
+<p>Кожна підтримка — це крок до мрії ✨</p>
+<p>Дякую вам 🤍</p>
+</div>
+
+<div class="qr">
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://babikovan.github.io/BabikovaNBabikova/">
+<p>Скануй 📲</p>
+</div>
+</div>
+
+<!-- ФЛАЄР 3 -->
+<div class="container">
+<h1>🌊 Банка на мрію</h1>
+
+<div class="text">
+<p>Я мама, яка хоче подарувати сину радість 💛</p>
+<p>Ігор мріє про подорож до моря 🌊</p>
+<p>Дякую за доброту і підтримку 💫</p>
+</div>
+
+<div class="qr">
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://babikovan.github.io/BabikovaNBabikova/">
+<p>Скануй 📲</p>
+</div>
+</div>
+
+<!-- ФЛАЄР 4 -->
+<div class="container">
+<h1>🌊 Банка на мрію</h1>
+
+<div class="text">
+<p>Мрії здійснюються завдяки добрим людям 💖</p>
+<p>Подаруй Ігорю емоції та море 🌊</p>
+<p>Дякую за підтримку 🤍</p>
+</div>
+
+<div class="qr">
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://babikovan.github.io/BabikovaNBabikova/">
+<p>Скануй 📲</p>
+</div>
 </div>
 
 </div>
