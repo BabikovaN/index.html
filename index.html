@@ -2,229 +2,229 @@
 <html lang="uk">
 <head>
 <meta charset="UTF-8">
-<title>Солодкий маркет 🍩</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Флаєр 🌊</title>
 
 <style>
-body {
-  font-family: Arial;
-  margin: 0;
-  padding: 15px;
-  background: linear-gradient(135deg, #ffe0f0, #fff5cc);
+
+/* ДЛЯ ДРУКУ */
+@media print {
+  body {
+    margin: 0;
+  }
 }
 
-h1 { text-align: center; }
+/* СІТКА 2x2 (4 флаєри) */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 10px;
+}
 
-/* КНОПКА СПРАВА */
-.top-btn {
-  position: fixed;
-  top: 10px;
+/* КАРТКА */
+.container {
+  background: linear-gradient(135deg, #ffcce6, #ffe6f2);
+  border-radius: 16px;
+  padding: 15px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ДЕКОР */
+.container::before {
+  content: "💖 🐚 💖 🪸 💖 🐚";
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  font-size: 18px;
+  opacity: 0.3;
+}
+
+.container::after {
+  content: "🐚 💖 🪸 💖 🐚 💖";
+  position: absolute;
+  bottom: 5px;
   right: 10px;
-  width: auto;
-  padding: 8px 12px;
-  font-size: 14px;
+  font-size: 18px;
+  opacity: 0.3;
 }
 
-.box {
-  background: white;
+h1 {
+  text-align: center;
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.text {
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.qr {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.qr img {
+  width: 100px;
+}
+
+.qr p {
+  font-size: 10px;
+  margin: 5px 0;<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Флаєр 🌊</title>
+
+<style>
+
+/* ДЛЯ ДРУКУ */
+@media print {
+  body {
+    margin: 0;
+  }
+}
+
+/* СІТКА 2x2 (4 флаєри) */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 10px;
+}
+
+/* КАРТКА */
+.container {
+  background: linear-gradient(135deg, #ffcce6, #ffe6f2);
+  border-radius: 16px;
   padding: 15px;
-  border-radius: 12px;
-  margin-bottom: 20px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-input, textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 8px;
-  border-radius: 8px;
+/* ДЕКОР */
+.container::before {
+  content: "💖 🐚 💖 🪸 💖 🐚";
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  font-size: 18px;
+  opacity: 0.3;
 }
 
-button {
+.container::after {
+  content: "🐚 💖 🪸 💖 🐚 💖";
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  font-size: 18px;
+  opacity: 0.3;
+}
+
+h1 {
+  text-align: center;
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.text {
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.qr {
+  text-align: center;
   margin-top: 10px;
-  padding: 12px;
-  border: none;
-  background: #ff6fa5;
-  color: white;
-  border-radius: 8px;
-  cursor: pointer;
-  width: 100%;
 }
 
-.post {
-  background: white;
-  padding: 10px;
-  border-radius: 12px;
-  margin-top: 10px;
+.qr img {
+  width: 100px;
 }
 
-.post img {
-  width: 100%;
-  max-width: 200px;
-  border-radius: 10px;
+.qr p {
+  font-size: 10px;
+  margin: 5px 0;
 }
+
 </style>
 </head>
 
 <body>
 
-<h1>🍩 Солодкий маркет</h1>
+<div class="grid">
 
-<!-- КНОПКА ПЕРЕМИКАННЯ -->
-<button id="switchBtn" class="top-btn" onclick="switchMode()">Увійти як адмін</button>
+<!-- ФЛАЄР 1 -->
+<div class="container">
+<h1>🌊 Банка на мрію</h1>
 
-<!-- ВИБІР РОЛІ (перший екран) -->
-<div id="roleSelect" class="box">
-  <h3>Хто ви?</h3>
-  <button onclick="enterGuest()">Гість</button>
-  <button onclick="showLogin()">Адмін</button>
+<div class="text">
+<p>Я створила цю сторінку як невелику ініціативу для мого сина Ігоря 🌊✨</p>
+<p>Він мріє про море та нові пригоди 🌟</p>
+<p>Я працюю барістою ☕ і хочу подарувати йому щасливі емоції 💛</p>
+<p>Дякую за підтримку 💫</p>
 </div>
 
-<!-- ЛОГІН -->
-<div id="loginBox" class="box" style="display:none;">
-  <h3>Вхід для адміна</h3>
-  <input id="login" placeholder="Логін">
-  <input id="password" type="password" placeholder="Пароль">
-  <button onclick="loginAdmin()">Увійти</button>
+<div class="qr">
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://babikovan.github.io/BabikovaNBabikova/">
+<p>Скануй 📲</p>
+</div>
 </div>
 
-<!-- ПОШУК -->
-<div id="searchBox" class="box" style="display:none;">
-  <input id="search" placeholder="Пошук..." oninput="renderPosts()">
+<!-- ФЛАЄР 2 -->
+<div class="container">
+<h1>🌊 Банка на мрію</h1>
+
+<div class="text">
+<p>Це маленька мрія мого сина Ігоря 💖</p>
+<p>Він дуже хоче побачити море 🌊</p>
+<p>Кожна підтримка — це крок до мрії ✨</p>
+<p>Дякую вам 🤍</p>
 </div>
 
-<!-- АДМІН ПАНЕЛЬ -->
-<div id="adminPanel" class="box" style="display:none;">
-  <h3>Додати солодощі</h3>
-
-  <input id="title" placeholder="Назва">
-  <textarea id="desc" placeholder="Опис"></textarea>
-  <input id="price" placeholder="Ціна">
-  <input id="image" type="file">
-
-  <button onclick="addPost()">Додати 🍬</button>
+<div class="qr">
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://babikovan.github.io/BabikovaNBabikova/">
+<p>Скануй 📲</p>
+</div>
 </div>
 
-<div id="posts"></div>
+<!-- ФЛАЄР 3 -->
+<div class="container">
+<h1>🌊 Банка на мрію</h1>
 
-<script>
+<div class="text">
+<p>Я мама, яка хоче подарувати сину радість 💛</p>
+<p>Ігор мріє про подорож до моря 🌊</p>
+<p>Дякую за доброту і підтримку 💫</p>
+</div>
 
-let isAdmin = false;
-let posts = JSON.parse(localStorage.getItem("posts")) || [];
+<div class="qr">
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://babikovan.github.io/BabikovaNBabikova/">
+<p>Скануй 📲</p>
+</div>
+</div>
 
-// ГІСТЬ
-function enterGuest() {
-  isAdmin = false;
+<!-- ФЛАЄР 4 -->
+<div class="container">
+<h1>🌊 Банка на мрію</h1>
 
-  document.getElementById("roleSelect").style.display = "none";
-  document.getElementById("loginBox").style.display = "none";
-  document.getElementById("adminPanel").style.display = "none";
+<div class="text">
+<p>Мрії здійснюються завдяки добрим людям 💖</p>
+<p>Подаруй Ігорю емоції та море 🌊</p>
+<p>Дякую за підтримку 🤍</p>
+</div>
 
-  document.getElementById("searchBox").style.display = "block";
+<div class="qr">
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://babikovan.github.io/BabikovaNBabikova/">
+<p>Скануй 📲</p>
+</div>
+</div>
 
-  document.getElementById("switchBtn").innerText = "Увійти як адмін";
-
-  renderPosts();
-}
-
-// ПОКАЗАТИ ЛОГІН
-function showLogin() {
-  document.getElementById("roleSelect").style.display = "none";
-  document.getElementById("loginBox").style.display = "block";
-}
-
-// ЛОГІН
-function loginAdmin() {
-  const login = document.getElementById("login").value;
-  const password = document.getElementById("password").value;
-
-  if (login === "Nastuhsa" && password === "Babikovf") {
-    isAdmin = true;
-
-    document.getElementById("loginBox").style.display = "none";
-    document.getElementById("adminPanel").style.display = "block";
-    document.getElementById("searchBox").style.display = "block";
-
-    document.getElementById("switchBtn").innerText = "Вийти в гість";
-
-    renderPosts();
-  } else {
-    alert("Неправильний логін або пароль");
-  }
-}
-
-// ПЕРЕМИКАННЯ
-function switchMode() {
-  if (isAdmin) {
-    enterGuest();
-  } else {
-    showLogin();
-  }
-}
-
-// РЕНДЕР
-function renderPosts() {
-  const container = document.getElementById("posts");
-  const search = document.getElementById("search")?.value?.toLowerCase() || "";
-
-  container.innerHTML = "";
-
-  posts
-    .filter(p => p.title.toLowerCase().includes(search))
-    .forEach((p, index) => {
-      const div = document.createElement("div");
-      div.className = "post";
-
-      div.innerHTML = `
-        <h3>${p.title}</h3>
-        <p>${p.desc}</p>
-        <b>${p.price} грн</b><br>
-        ${p.image ? `<img src="${p.image}">` : ""}
-        ${isAdmin ? `<button onclick="deletePost(${index})">❌ Видалити</button>` : ""}
-      `;
-
-      container.appendChild(div);
-    });
-}
-
-// ДОДАТИ
-function addPost() {
-  const title = document.getElementById("title").value;
-  const desc = document.getElementById("desc").value;
-  const price = document.getElementById("price").value;
-  const file = document.getElementById("image").files[0];
-
-  if (!title || !price) {
-    alert("Заповни назву і ціну");
-    return;
-  }
-
-  if (file) {
-    const reader = new FileReader();
-    reader.onload = function(e) {
-      savePost(title, desc, price, e.target.result);
-    };
-    reader.readAsDataURL(file);
-  } else {
-    savePost(title, desc, price, null);
-  }
-}
-
-// ЗБЕРЕГТИ
-function savePost(title, desc, price, image) {
-  posts.push({ title, desc, price, image });
-  localStorage.setItem("posts", JSON.stringify(posts));
-  renderPosts();
-}
-
-// ВИДАЛИТИ
-function deletePost(index) {
-  posts.splice(index, 1);
-  localStorage.setItem("posts", JSON.stringify(posts));
-  renderPosts();
-}
-
-</script>
+</div>
 
 </body>
 </html>
